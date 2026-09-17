@@ -18,7 +18,7 @@ flowchart LR
     D -->|confident and valid| E[clean_output.csv]
     D -->|missing, low confidence, or invalid| F[review_queue.jsonl]
     F -->|Layout C missing field only| G[LLM fallback]
-    G --> F
+    G --> J[stage5_results.jsonl]
     F --> H[Review UI]
     H --> E
     H --> I[audit_log.csv]
