@@ -4,3 +4,4 @@ __pycache__/
 audit_log.csv
 clean_output.csv
 review_queue.jsonl
+.env
