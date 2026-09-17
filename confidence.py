@@ -30,7 +30,7 @@ def demo():
     from extract import extract
     import os
 
-    base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "sample-data", "inspection-certs")
+    base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sample-data", "inspection-certs")
 
     _, fields, result = extract(os.path.join(base, "MES-2026-4100.pdf"))
     conf = compute_confidence(fields, result)

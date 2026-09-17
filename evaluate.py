@@ -6,7 +6,7 @@ from pydantic import ValidationError
 
 from extract import extract
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "sample-data", "inspection-certs")
+DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sample-data", "inspection-certs")
 GROUND_TRUTH = os.path.join(DATA_DIR, "GROUND_TRUTH.csv")
 
 FIELDS = [

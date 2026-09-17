@@ -27,7 +27,7 @@ def extract(pdf_path):
 
 def demo():
     sample = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "..",
+        os.path.dirname(os.path.abspath(__file__)),
         "sample-data", "inspection-certs", "MES-2026-4100.pdf",
     )
     layout, fields, result = extract(sample)

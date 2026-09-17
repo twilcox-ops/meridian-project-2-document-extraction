@@ -7,7 +7,7 @@ from confidence import FIELDS, compute_confidence, needs_review
 from extract import extract
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "..", "sample-data", "inspection-certs")
+DATA_DIR = os.path.join(BASE_DIR, "sample-data", "inspection-certs")
 CLEAN_OUTPUT = os.path.join(BASE_DIR, "clean_output.csv")
 REVIEW_QUEUE = os.path.join(BASE_DIR, "review_queue.jsonl")
 
