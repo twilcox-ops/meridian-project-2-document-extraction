@@ -46,6 +46,10 @@ the queue with an unresolved field still blank.
   documents exactly.
 - Review workflow (display, correction, audit logging, and the gating
   that blocks unresolved fields) manually verified end to end.
+- Reproducibility: verified from a fresh GitHub clone into
+  `C:\Users\dev-ops\Documents\project-2-document-extraction-test`. Using
+  only files from that clone, `evaluate.py` produced 468/468 (100%) and
+  `pipeline.py` produced 32 clean / 4 review. No LLM calls were made.
 - LLM fallback (Stage 5, one real run against all 4 affected documents):
   correctly returned null on every document rather than fabricating a
   value, matching the deterministic result exactly (4/4 accuracy with and
